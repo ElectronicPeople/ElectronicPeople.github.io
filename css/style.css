@@ -109,8 +109,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #header #logo h1 a, #header #logo h1 a:hover {
   color: #fff;
-  padding-left: 10px;
-  border-left: 4px solid #05a3e1;
+/*  padding-left: 10px;
+  border-left: 4px solid #05a3e1;*/
 }
 
 #header #logo img {
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #header #logo h1 {
-    font-size: 25px;
+    font-size: 22px;
   }
   #header #logo img {
     max-height: 40px;
@@ -1463,7 +1463,32 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ddd;
 }
 
-#header #logo div {
+#header #logo .logo-container {
+  display: flex;
+}
+
+#header #logo .logo-container a {
+  color: #fff;
+  line-height: 1;
+}
+
+#header #logo .logo-title {
     color: #fff;
-    padding-left: 10px;
-    border-left: 4px solid #05a3e1;
+    /*padding-left: 10px;*/
+    /*border-left: 4px solid #05a3e1;*/
+}
+
+#header #logo .logo-img {
+  height: 50px;
+  width: 50px;
+  /*-webkit-filter: drop-shadow(0px 0px 2px rgb(255,255,255,0.8));*/
+}
+
+@keyframes glow {
+  from {
+    -webkit-filter: drop-shadow(0px 0px 2px rgb(255,255,255,0.8));
+  }
+  to {
+    -webkit-filter: drop-shadow(0px 0px 7px rgb(255,255,255, 0.5));
+  }
+}
